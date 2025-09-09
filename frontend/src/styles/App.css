@@ -1,0 +1,133 @@
+/* Full page */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #4b563d;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+}
+
+/* Section Cards */
+.info, .instructions, .generator {
+  background: white;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(119, 143, 96, 0.505);
+  width: 90%;
+  max-width: 800px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info:hover, .instructions:hover, .generator:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(119, 143, 96, 0.094);
+}
+
+/* Instructions */
+.instructions ol {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+/* QR Generator */
+.qr-generator {
+  text-align: center;
+}
+
+.qr-generator input {
+  padding: 12px;
+  width: 70%;
+  max-width: 500px;
+  margin: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qr-generator input:focus {
+  border: 2px solid #4facfe;
+  box-shadow: 0 0 8px rgba(79, 172, 254, 0.6);
+  outline: none;
+}
+
+.qr-generator button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.qr-generator button:hover {
+  background: #00c6ff;
+  transform: scale(1.05);
+}
+
+.qr-output {
+  margin-top: 20px;
+}
+
+.qr-output img {
+  margin: 15px 0;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  padding: 12px;
+  background: #fafafa;
+  width: 220px;
+  height: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qr-output img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(120, 85, 85, 0.594);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(255,255,255,0.7);
+  font-size: 14px;
+  margin-top: auto;
+  border-radius: 12px 12px 0 0;
+}
