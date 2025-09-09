@@ -11,7 +11,7 @@ const QRGenerator = () => {
       return;
     }
     try {
-      const response = await axios.post("https://qrcode-generator-backend-osu9.onrender.com", {
+      const response = await axios.post("http://localhost:5000/generate", {
         url,
       });
       setQrCode(response.data.qrCode);
